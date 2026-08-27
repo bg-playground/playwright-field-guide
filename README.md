@@ -10,12 +10,15 @@ Best practices · How-tos · Recipes · Anti-patterns · Debugging · Architectu
 
 This repository is a living engineering field guide for building reliable browser automation with Playwright. It is intentionally **not another starter framework**. The goal is to explain the decisions that make a Playwright suite resilient, diagnosable, maintainable, and useful in real delivery pipelines.
 
+**New here?** Follow the [Playwright Field Guide Learning Path](docs/learning-path.md). **Solving a problem right now?** Use the task index below.
+
 ---
 
 ## Start here
 
 | I want to… | Go to… |
 | --- | --- |
+| Learn the Field Guide in a sensible order | [**Learning Path**](docs/learning-path.md) |
 | Stop flaky tests | [**Reliable Test Design**](docs/reliable-test-design/README.md) |
 | Diagnose a flaky test | [**Why Is My Playwright Test Flaky?**](docs/reliable-test-design/flakiness-diagnostic.md) |
 | Choose resilient locators | [**Locator Strategy**](docs/locators/README.md) |
@@ -37,7 +40,7 @@ This repository is a living engineering field guide for building reliable browse
 | Understand what *not* to do | [**Anti-pattern Catalog**](anti-patterns/README.md) |
 | Understand version/freshness policy | [**Compatibility & Freshness**](docs/compatibility.md) |
 
-See the [v0.1 roadmap](docs/roadmap.md) for the release plan.
+See the [v0.1 roadmap](docs/roadmap.md) and [v0.1.0 release notes](docs/releases/v0.1.0.md).
 
 ## What this guide optimizes for
 
@@ -98,7 +101,7 @@ The Field Guide explains not just **what** to type, but **why the second pattern
 
 ## Living documentation, not a frozen handbook
 
-The repository now includes executable examples and maintenance automation so important patterns are exercised rather than trusted indefinitely.
+The repository includes executable examples and maintenance automation so important patterns are exercised rather than trusted indefinitely.
 
 ```text
 Playwright/dependency change
@@ -112,40 +115,29 @@ Playwright/dependency change
  update affected guidance only
 ```
 
-The executable suite lives in `examples/executable/` and runs on pull requests, pushes to `main`, and a weekly freshness schedule. See [Compatibility & Freshness](docs/compatibility.md) and the [Playwright Release Review](docs/maintenance/release-review.md).
+The executable suite lives in `examples/executable/` and runs on pull requests, pushes to `main`, and a weekly freshness schedule. Dependencies are installed from the committed lockfile with `npm ci`. See [Compatibility & Freshness](docs/compatibility.md) and the [Playwright Release Review](docs/maintenance/release-review.md).
 
 Automation detects change and runtime breakage. Human review decides whether engineering guidance changed.
 
-## Planned knowledge map
+## Knowledge map
 
 ```text
 docs/
-├── getting-started/
-├── best-practices/
-├── architecture/
+├── reliable-test-design/
 ├── locators/
-├── assertions/
-├── fixtures/
-├── page-objects/
-├── authentication/
-├── test-data/
-├── api-testing/
-├── network/
-├── accessibility/
-├── visual-testing/
-├── debugging/
-├── parallelism/
-├── ci/
-├── performance/
-└── migration/
+├── fixtures-auth-test-data/
+├── architecture/
+├── ci-debugging/
+├── api-advanced/
+└── maintenance/
 
 recipes/
 faq/
 anti-patterns/
-examples/
+examples/executable/
 ```
 
-Directories are added when they contain useful material; the project will not create empty taxonomy for its own sake.
+Directories are added when they contain useful material; the project does not create empty taxonomy for its own sake.
 
 ## What this repository is — and is not
 
@@ -176,7 +168,7 @@ The Field Guide may harvest **generalizable lessons and patterns** from real fra
 Playwright changes frequently. The repository uses several complementary maintenance mechanisms:
 
 - representative executable examples run in CI;
-- the Playwright dependency is pinned so validation corresponds to a known version;
+- the Playwright dependency and transitive install are captured by `package-lock.json`;
 - Dependabot proposes npm and GitHub Actions updates;
 - scheduled CI re-runs the executable documentation weekly;
 - major guides retain meaningful **Last verified** markers;
@@ -186,9 +178,9 @@ See [compatibility and freshness](docs/compatibility.md).
 
 ## Project status
 
-**v0.1 is a release candidate.** The core knowledge base covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns. Executable examples, CI validation, dependency update automation, scheduled freshness checks, and a release-review process are now part of the repository.
+**v0.1 is a release candidate.** The core knowledge base covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns. Executable examples, deterministic CI installation, dependency update automation, scheduled freshness checks, a newcomer learning path, and a release-review process are part of the release candidate.
 
-The next gate is a full v0.1 release/readiness audit: navigation, content coverage, CI, freshness mechanisms, public-repository polish, and newcomer usability.
+The final gates are green PR #10 CI, merge to `main`, and creation of the `v0.1.0` release/tag.
 
 See [the roadmap](docs/roadmap.md).
 
