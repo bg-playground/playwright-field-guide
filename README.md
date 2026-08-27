@@ -32,11 +32,11 @@ This repository is a living engineering field guide for building reliable browse
 | Test APIs and UI together | [**API + Advanced Playwright**](docs/api-advanced/README.md) |
 | Choose API vs UI coverage | [**API vs UI: Decision Guide**](docs/api-advanced/api-vs-ui.md) |
 | Use network/browser edge-case patterns | [**Network & Browser Recipes**](docs/api-advanced/network-browser-recipes.md) |
-| Find a copyable solution | **Field Recipes** *(v0.1 PR 8)* |
-| Get a straight answer to a common question | **FAQ** *(v0.1 PR 8)* |
-| Understand what *not* to do | **Anti-pattern Catalog** *(v0.1 PR 8)* |
+| Find a copyable solution | [**Field Recipes**](recipes/README.md) |
+| Get a straight answer to a common question | [**FAQ**](faq/README.md) |
+| Understand what *not* to do | [**Anti-pattern Catalog**](anti-patterns/README.md) |
 
-The remaining placeholders become live as each v0.1 milestone lands. See the [v0.1 roadmap](docs/roadmap.md).
+See the [v0.1 roadmap](docs/roadmap.md) for the remaining living-documentation and freshness work.
 
 ## What this guide optimizes for
 
@@ -93,7 +93,7 @@ Prefer a web-first assertion:
 await expect(page.getByText('Welcome')).toBeVisible();
 ```
 
-The Field Guide will explain not just **what** to type, but **why the second pattern is more reliable**.
+The Field Guide explains not just **what** to type, but **why the second pattern is more reliable**.
 
 ## Planned knowledge map
 
@@ -119,26 +119,9 @@ docs/
 └── migration/
 
 recipes/
-├── authentication/
-├── downloads/
-├── uploads/
-├── iframes/
-├── popups/
-├── api-plus-ui/
-├── mocking/
-├── waiting/
-├── test-data/
-└── github-actions/
-
-examples/
-├── basic/
-├── fixtures/
-├── page-objects/
-├── api-testing/
-└── production-structure/
-
 faq/
 anti-patterns/
+examples/
 ```
 
 Directories are added when they contain useful material; the project will not create empty taxonomy for its own sake.
@@ -183,9 +166,9 @@ See [compatibility and freshness](docs/compatibility.md).
 
 ## Project status
 
-**v0.1 is under active construction.** The initial release is intentionally being built as a sequence of focused milestones rather than a large dump of shallow tips.
+**v0.1 is under active construction.** The core knowledge base now covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns.
 
-The goal for v0.1 is a small set of resources good enough to bookmark: reliability, locators, fixtures/auth/test data, architecture, CI/debugging, advanced Playwright, FAQ/recipes, and automated freshness checks.
+The remaining v0.1 work focuses on making the repository a stronger living resource through executable examples and automated freshness/version maintenance.
 
 See [the roadmap](docs/roadmap.md).
 
