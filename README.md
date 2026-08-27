@@ -29,7 +29,9 @@ This repository is a living engineering field guide for building reliable browse
 | Build diagnosable CI | [**CI & Debugging**](docs/ci-debugging/README.md) |
 | Debug “passes locally, fails in CI” | [**Passes Locally, Fails in CI**](docs/ci-debugging/passes-locally.md) |
 | Build a GitHub Actions pipeline | [**GitHub Actions Patterns**](docs/ci-debugging/github-actions.md) |
-| Test APIs and UI together | **API + Advanced Playwright** *(v0.1 PR 7)* |
+| Test APIs and UI together | [**API + Advanced Playwright**](docs/api-advanced/README.md) |
+| Choose API vs UI coverage | [**API vs UI: Decision Guide**](docs/api-advanced/api-vs-ui.md) |
+| Use network/browser edge-case patterns | [**Network & Browser Recipes**](docs/api-advanced/network-browser-recipes.md) |
 | Find a copyable solution | **Field Recipes** *(v0.1 PR 8)* |
 | Get a straight answer to a common question | **FAQ** *(v0.1 PR 8)* |
 | Understand what *not* to do | **Anti-pattern Catalog** *(v0.1 PR 8)* |
