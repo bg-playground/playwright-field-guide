@@ -1,0 +1,14 @@
+{
+  "name": "playwright-field-guide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Executable examples and validation for the Playwright Field Guide",
+  "scripts": {
+    "test": "playwright test",
+    "test:docs": "playwright test",
+    "test:list": "playwright test --list"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.0"
+  }
+}
