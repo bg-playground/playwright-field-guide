@@ -16,7 +16,8 @@ This repository is a living engineering field guide for building reliable browse
 
 | I want to… | Go to… |
 | --- | --- |
-| Stop flaky tests | **Reliable Test Design** *(v0.1 PR 2)* |
+| Stop flaky tests | [**Reliable Test Design**](docs/reliable-test-design/README.md) |
+| Diagnose a flaky test | [**Why Is My Playwright Test Flaky?**](docs/reliable-test-design/flakiness-diagnostic.md) |
 | Choose resilient locators | **Locator Strategy** *(v0.1 PR 3)* |
 | Structure a real test suite | **Architecture** *(v0.1 PR 5)* |
 | Reuse authentication safely | **Fixtures, Auth & Test Data** *(v0.1 PR 4)* |
@@ -26,7 +27,7 @@ This repository is a living engineering field guide for building reliable browse
 | Get a straight answer to a common question | **FAQ** *(v0.1 PR 8)* |
 | Understand what *not* to do | **Anti-pattern Catalog** *(v0.1 PR 8)* |
 
-The links above become live as each v0.1 milestone lands. See the [v0.1 roadmap](docs/roadmap.md).
+The remaining placeholders become live as each v0.1 milestone lands. See the [v0.1 roadmap](docs/roadmap.md).
 
 ## What this guide optimizes for
 
