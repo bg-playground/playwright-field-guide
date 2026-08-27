@@ -2,7 +2,7 @@
 
 > Production-minded Playwright testing patterns for QA engineers, SDETs, developers, and teams that want fast tests **without flaky tests**.
 
-[![Status](https://img.shields.io/badge/status-building%20v0.1-orange)](#project-status)
+[![Status](https://img.shields.io/badge/status-v0.1%20release%20candidate-blue)](#project-status)
 [![Playwright](https://img.shields.io/badge/Playwright-living%20guide-2EAD33?logo=playwright)](https://playwright.dev/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
@@ -35,8 +35,9 @@ This repository is a living engineering field guide for building reliable browse
 | Find a copyable solution | [**Field Recipes**](recipes/README.md) |
 | Get a straight answer to a common question | [**FAQ**](faq/README.md) |
 | Understand what *not* to do | [**Anti-pattern Catalog**](anti-patterns/README.md) |
+| Understand version/freshness policy | [**Compatibility & Freshness**](docs/compatibility.md) |
 
-See the [v0.1 roadmap](docs/roadmap.md) for the remaining living-documentation and freshness work.
+See the [v0.1 roadmap](docs/roadmap.md) for the release plan.
 
 ## What this guide optimizes for
 
@@ -95,6 +96,26 @@ await expect(page.getByText('Welcome')).toBeVisible();
 
 The Field Guide explains not just **what** to type, but **why the second pattern is more reliable**.
 
+## Living documentation, not a frozen handbook
+
+The repository now includes executable examples and maintenance automation so important patterns are exercised rather than trusted indefinitely.
+
+```text
+Playwright/dependency change
+          ↓
+ Dependabot review trigger
+          ↓
+ executable example CI
+          ↓
+ upstream release-note review
+          ↓
+ update affected guidance only
+```
+
+The executable suite lives in `examples/executable/` and runs on pull requests, pushes to `main`, and a weekly freshness schedule. See [Compatibility & Freshness](docs/compatibility.md) and the [Playwright Release Review](docs/maintenance/release-review.md).
+
+Automation detects change and runtime breakage. Human review decides whether engineering guidance changed.
+
 ## Planned knowledge map
 
 ```text
@@ -152,23 +173,22 @@ The Field Guide may harvest **generalizable lessons and patterns** from real fra
 
 ## Keeping the guide current
 
-Playwright changes frequently. The project will evolve toward executable documentation and automated freshness checks so examples do not silently rot.
+Playwright changes frequently. The repository uses several complementary maintenance mechanisms:
 
-Current policy:
-
-- guidance should link to authoritative Playwright documentation when claiming an official recommendation;
-- major guides include a **Last verified** marker;
-- version-sensitive material must identify the assumption it depends on;
-- scheduled CI and dependency automation are planned for the v0.1 living-documentation milestone;
-- release-note reviews should summarize **what testing engineers need to care about**, rather than copying upstream changelogs.
+- representative executable examples run in CI;
+- the Playwright dependency is pinned so validation corresponds to a known version;
+- Dependabot proposes npm and GitHub Actions updates;
+- scheduled CI re-runs the executable documentation weekly;
+- major guides retain meaningful **Last verified** markers;
+- release reviews interpret what testing engineers need to care about rather than copying upstream changelogs.
 
 See [compatibility and freshness](docs/compatibility.md).
 
 ## Project status
 
-**v0.1 is under active construction.** The core knowledge base now covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns.
+**v0.1 is a release candidate.** The core knowledge base covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns. Executable examples, CI validation, dependency update automation, scheduled freshness checks, and a release-review process are now part of the repository.
 
-The remaining v0.1 work focuses on making the repository a stronger living resource through executable examples and automated freshness/version maintenance.
+The next gate is a full v0.1 release/readiness audit: navigation, content coverage, CI, freshness mechanisms, public-repository polish, and newcomer usability.
 
 See [the roadmap](docs/roadmap.md).
 
