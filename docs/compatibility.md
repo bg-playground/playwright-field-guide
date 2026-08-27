@@ -26,15 +26,17 @@ Do not mechanically update a verification date. The date means the affected guid
 
 The repository contains a deliberately small executable suite under `examples/executable/`.
 
-Its purpose is not to convert every Markdown snippet into a test. It validates representative core patterns using the repository's pinned Playwright dependency.
+Its purpose is not to convert every Markdown snippet into a test. It validates representative core patterns using the repository's explicitly pinned Playwright dependency.
 
-CI runs:
+During the initial executable-documentation bootstrap, CI installs the exact top-level Playwright version declared in `package.json` with:
 
 ```bash
-npm ci
+npm install --no-audit --no-fund
 npx playwright install --with-deps chromium
 npm run test:docs
 ```
+
+A committed npm lockfile and `npm ci` are the preferred deterministic end state and should be considered during the v0.1 readiness audit after the first successful dependency installation generates the lockfile.
 
 Executable coverage should grow when a code example is important, version-sensitive, and practical to validate without creating a large demonstration application.
 
