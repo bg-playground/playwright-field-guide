@@ -23,7 +23,9 @@ This repository is a living engineering field guide for building reliable browse
 | Reuse authentication safely | [**Fixtures, Authentication & Test Data**](docs/fixtures-auth-test-data/README.md) |
 | Choose an authentication model | [**Authentication Decision Guide**](docs/fixtures-auth-test-data/authentication-decision-guide.md) |
 | Design parallel-safe test data | [**Test Data Patterns**](docs/fixtures-auth-test-data/test-data-patterns.md) |
-| Structure a real test suite | **Architecture** *(v0.1 PR 5)* |
+| Structure a real test suite | [**Playwright Test Architecture**](docs/architecture/README.md) |
+| Decide whether to use Page Objects | [**Page Objects: Decision Guide**](docs/architecture/page-objects.md) |
+| See architecture evolve by suite size | [**Architecture by Suite Size**](docs/architecture/suite-size-examples.md) |
 | Debug “passes locally, fails in CI” | **CI & Debugging** *(v0.1 PR 6)* |
 | Test APIs and UI together | **API + Advanced Playwright** *(v0.1 PR 7)* |
 | Find a copyable solution | **Field Recipes** *(v0.1 PR 8)* |
