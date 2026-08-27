@@ -2,7 +2,7 @@
 
 > Production-minded Playwright testing patterns for QA engineers, SDETs, developers, and teams that want fast tests **without flaky tests**.
 
-[![Status](https://img.shields.io/badge/status-v0.1%20release%20candidate-blue)](#project-status)
+[![Status](https://img.shields.io/badge/release-v0.1.0-blue)](docs/releases/v0.1.0.md)
 [![Playwright](https://img.shields.io/badge/Playwright-living%20guide-2EAD33?logo=playwright)](https://playwright.dev/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
@@ -178,9 +178,9 @@ See [compatibility and freshness](docs/compatibility.md).
 
 ## Project status
 
-**v0.1 is a release candidate.** The core knowledge base covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns. Executable examples, deterministic CI installation, dependency update automation, scheduled freshness checks, a newcomer learning path, and a release-review process are part of the release candidate.
+**v0.1.0 is the first public release baseline.** It establishes the core knowledge base across reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns, backed by executable examples and living-documentation maintenance workflows.
 
-The remaining gates are this final release-hygiene validation on current `main` and creation of the `v0.1.0` release/tag.
+Future work should be driven by useful additions, real failure modes, community questions, and Playwright releases—not by filling taxonomy for its own sake.
 
 See [the roadmap](docs/roadmap.md).
 
