@@ -76,12 +76,15 @@ The first release is deliberately built as a sequence of focused milestones. Dep
 
 ## PR 9 — Living Documentation
 
-- executable examples
-- scheduled Playwright-version CI
-- dependency automation
-- freshness checks
-- documentation validation
-- release-note review process
+- [x] representative executable examples
+- [x] pull-request and `main` executable-documentation CI
+- [x] weekly scheduled freshness validation
+- [x] npm and GitHub Actions dependency automation
+- [x] explicit pinned Playwright validation version
+- [x] compatibility/freshness maintenance policy
+- [x] repeatable Playwright release-review process
+
+The maintenance model deliberately separates automated detection/execution from editorial judgment. A dependency update can trigger review; it cannot declare prose current.
 
 ## PR 10 — v0.1 Readiness
 
@@ -89,6 +92,7 @@ The first release is deliberately built as a sequence of focused milestones. Dep
 - beginner-to-advanced learning path
 - repository presentation and discoverability
 - badges/topics polish
+- CI/freshness validation audit
 - first tagged release
 
 ## Scope rule
