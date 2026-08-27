@@ -20,8 +20,10 @@ This repository is a living engineering field guide for building reliable browse
 | Diagnose a flaky test | [**Why Is My Playwright Test Flaky?**](docs/reliable-test-design/flakiness-diagnostic.md) |
 | Choose resilient locators | [**Locator Strategy**](docs/locators/README.md) |
 | See locator choices by example | [**Locator Decision Examples**](docs/locators/decision-examples.md) |
+| Reuse authentication safely | [**Fixtures, Authentication & Test Data**](docs/fixtures-auth-test-data/README.md) |
+| Choose an authentication model | [**Authentication Decision Guide**](docs/fixtures-auth-test-data/authentication-decision-guide.md) |
+| Design parallel-safe test data | [**Test Data Patterns**](docs/fixtures-auth-test-data/test-data-patterns.md) |
 | Structure a real test suite | **Architecture** *(v0.1 PR 5)* |
-| Reuse authentication safely | **Fixtures, Auth & Test Data** *(v0.1 PR 4)* |
 | Debug “passes locally, fails in CI” | **CI & Debugging** *(v0.1 PR 6)* |
 | Test APIs and UI together | **API + Advanced Playwright** *(v0.1 PR 7)* |
 | Find a copyable solution | **Field Recipes** *(v0.1 PR 8)* |
