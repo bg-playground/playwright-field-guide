@@ -18,7 +18,8 @@ This repository is a living engineering field guide for building reliable browse
 | --- | --- |
 | Stop flaky tests | [**Reliable Test Design**](docs/reliable-test-design/README.md) |
 | Diagnose a flaky test | [**Why Is My Playwright Test Flaky?**](docs/reliable-test-design/flakiness-diagnostic.md) |
-| Choose resilient locators | **Locator Strategy** *(v0.1 PR 3)* |
+| Choose resilient locators | [**Locator Strategy**](docs/locators/README.md) |
+| See locator choices by example | [**Locator Decision Examples**](docs/locators/decision-examples.md) |
 | Structure a real test suite | **Architecture** *(v0.1 PR 5)* |
 | Reuse authentication safely | **Fixtures, Auth & Test Data** *(v0.1 PR 4)* |
 | Debug “passes locally, fails in CI” | **CI & Debugging** *(v0.1 PR 6)* |
