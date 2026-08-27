@@ -27,6 +27,30 @@ A large amount of content is not automatically a better contribution. Prefer one
 
 Read [docs/editorial-standard.md](docs/editorial-standard.md) before adding a substantial guide.
 
+## Local validation
+
+Install the pinned repository dependencies from the committed lockfile:
+
+```bash
+npm ci
+```
+
+Install Chromium when it is not already present:
+
+```bash
+npx playwright install chromium
+```
+
+Run the executable documentation:
+
+```bash
+npm run test:docs
+```
+
+Markdown quality is also checked in GitHub Actions using the repository's markdownlint configuration.
+
+If you change a version-sensitive Playwright example or recommendation, review [docs/compatibility.md](docs/compatibility.md) and [docs/maintenance/release-review.md](docs/maintenance/release-review.md).
+
 ## Examples
 
 TypeScript is the default language for examples unless the topic specifically requires another language.
@@ -39,7 +63,9 @@ Good examples should:
 - show material setup when it affects the lesson;
 - distinguish fragile patterns from context-dependent alternatives.
 
-When executable examples are introduced, contributed executable examples must pass repository CI.
+Contributed executable examples must pass repository CI.
+
+Not every Markdown snippet needs to become executable. Prioritize examples that are important, version-sensitive, or likely to regress as Playwright evolves.
 
 ## Official guidance vs project opinion
 
