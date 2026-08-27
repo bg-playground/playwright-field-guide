@@ -28,15 +28,13 @@ The repository contains a deliberately small executable suite under `examples/ex
 
 Its purpose is not to convert every Markdown snippet into a test. It validates representative core patterns using the repository's explicitly pinned Playwright dependency.
 
-During the initial executable-documentation bootstrap, CI installs the exact top-level Playwright version declared in `package.json` with:
+CI installs dependencies from the committed lockfile and runs the executable suite with:
 
 ```bash
-npm install --no-audit --no-fund
+npm ci --no-audit --no-fund
 npx playwright install --with-deps chromium
 npm run test:docs
 ```
-
-A committed npm lockfile and `npm ci` are the preferred deterministic end state and should be considered during the v0.1 readiness audit after the first successful dependency installation generates the lockfile.
 
 Executable coverage should grow when a code example is important, version-sensitive, and practical to validate without creating a large demonstration application.
 
@@ -45,7 +43,7 @@ Executable coverage should grow when a code example is important, version-sensit
 Executable examples currently use:
 
 - Node.js 22 in GitHub Actions;
-- the Playwright version pinned in `package.json`;
+- the Playwright version pinned in `package.json` and `package-lock.json`;
 - Chromium for the core documentation-validation suite.
 
 Additional browsers should be added when the behavior being documented is meaningfully browser-specific. Running three browsers merely to multiply green checks is not the goal.

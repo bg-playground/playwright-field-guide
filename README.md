@@ -180,7 +180,7 @@ See [compatibility and freshness](docs/compatibility.md).
 
 **v0.1 is a release candidate.** The core knowledge base covers reliability, locators, fixtures/auth/test data, architecture, CI/debugging, API/advanced Playwright, FAQ, recipes, and anti-patterns. Executable examples, deterministic CI installation, dependency update automation, scheduled freshness checks, a newcomer learning path, and a release-review process are part of the release candidate.
 
-The final gates are green PR #10 CI, merge to `main`, and creation of the `v0.1.0` release/tag.
+The remaining gates are this final release-hygiene validation on current `main` and creation of the `v0.1.0` release/tag.
 
 See [the roadmap](docs/roadmap.md).
 
