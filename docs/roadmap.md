@@ -88,12 +88,16 @@ The maintenance model deliberately separates automated detection/execution from 
 
 ## PR 10 — v0.1 Readiness
 
-- navigation/content audit
-- beginner-to-advanced learning path
-- repository presentation and discoverability
-- badges/topics polish
-- CI/freshness validation audit
-- first tagged release
+- [x] navigation/content audit
+- [x] beginner-to-advanced learning path
+- [x] contributor validation instructions
+- [x] deterministic npm lockfile and `npm ci` CI path
+- [x] CI/freshness validation audit
+- [x] v0.1 release notes
+- [ ] repository topics/social-preview polish in GitHub settings, if desired
+- [ ] create the first `v0.1.0` GitHub release/tag after final CI and merge
+
+PR 10 deliberately does not expand the core content taxonomy. It closes release-readiness gaps discovered by auditing the repository as a newcomer, contributor, and maintainer.
 
 ## Scope rule
 
