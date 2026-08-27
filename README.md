@@ -6,7 +6,7 @@
 [![Playwright](https://img.shields.io/badge/Playwright-living%20guide-2EAD33?logo=playwright)](https://playwright.dev/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
-**Best practices · How-tos · Recipes · Anti-patterns · Debugging · Architecture · FAQ**
+Best practices · How-tos · Recipes · Anti-patterns · Debugging · Architecture · FAQ
 
 This repository is a living engineering field guide for building reliable browser automation with Playwright. It is intentionally **not another starter framework**. The goal is to explain the decisions that make a Playwright suite resilient, diagnosable, maintainable, and useful in real delivery pipelines.
 
@@ -15,7 +15,7 @@ This repository is a living engineering field guide for building reliable browse
 ## Start here
 
 | I want to… | Go to… |
-|---|---|
+| --- | --- |
 | Stop flaky tests | **Reliable Test Design** *(v0.1 PR 2)* |
 | Choose resilient locators | **Locator Strategy** *(v0.1 PR 3)* |
 | Structure a real test suite | **Architecture** *(v0.1 PR 5)* |
