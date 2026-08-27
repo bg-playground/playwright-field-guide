@@ -26,7 +26,9 @@ This repository is a living engineering field guide for building reliable browse
 | Structure a real test suite | [**Playwright Test Architecture**](docs/architecture/README.md) |
 | Decide whether to use Page Objects | [**Page Objects: Decision Guide**](docs/architecture/page-objects.md) |
 | See architecture evolve by suite size | [**Architecture by Suite Size**](docs/architecture/suite-size-examples.md) |
-| Debug “passes locally, fails in CI” | **CI & Debugging** *(v0.1 PR 6)* |
+| Build diagnosable CI | [**CI & Debugging**](docs/ci-debugging/README.md) |
+| Debug “passes locally, fails in CI” | [**Passes Locally, Fails in CI**](docs/ci-debugging/passes-locally.md) |
+| Build a GitHub Actions pipeline | [**GitHub Actions Patterns**](docs/ci-debugging/github-actions.md) |
 | Test APIs and UI together | **API + Advanced Playwright** *(v0.1 PR 7)* |
 | Find a copyable solution | **Field Recipes** *(v0.1 PR 8)* |
 | Get a straight answer to a common question | **FAQ** *(v0.1 PR 8)* |
