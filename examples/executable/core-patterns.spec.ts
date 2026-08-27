@@ -3,13 +3,18 @@ import { expect, test } from '@playwright/test';
 test('role locator and web-first assertion', async ({ page }) => {
   await page.setContent(`
     <main>
-      <button type="button" onclick="this.textContent='Saved'">Save changes</button>
+      <button
+        type="button"
+        onclick="document.querySelector('[role=status]').textContent='Saved'"
+      >
+        Save changes
+      </button>
+      <p role="status"></p>
     </main>
   `);
 
-  const save = page.getByRole('button', { name: 'Save changes' });
-  await save.click();
-  await expect(save).toHaveText('Saved');
+  await page.getByRole('button', { name: 'Save changes' }).click();
+  await expect(page.getByRole('status')).toHaveText('Saved');
 });
 
 test('semantic scoping beats positional selection', async ({ page }) => {
