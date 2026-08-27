@@ -33,13 +33,15 @@ Use one or more categories:
 
 ### 3. Run validation
 
-At minimum:
+With a committed npm lockfile, use the deterministic install path:
 
 ```bash
 npm ci
 npx playwright install --with-deps chromium
 npm run test:docs
 ```
+
+During the initial v0.1 bootstrap before that lockfile is committed, use the repository workflow's `npm install --no-audit --no-fund` command instead.
 
 When reviewing a proposed Playwright dependency update, run the executable examples against that proposed version before merging.
 
@@ -101,7 +103,7 @@ Why pin it?
 - CI results correspond to a known version.
 - update PRs create an explicit review event;
 - failures are attributable to a concrete version change;
-- the guide does not silently begin testing against a newer dependency than maintainers reviewed.
+- the guide does not silently begin testing against a newer top-level Playwright version than maintainers reviewed.
 
 ## Node.js policy
 
@@ -112,7 +114,9 @@ Use an actively supported Node.js release in CI and declare it explicitly in wor
 Use two triggers:
 
 - **event-driven:** dependency/update PR when a newer Playwright version is available;
-- **scheduled:** periodic freshness workflow to catch link rot and ensure the executable suite still runs even when no content PR is active.
+- **scheduled:** periodic freshness workflow to ensure the executable suite still runs even when no content PR is active.
+
+Link validation can be added as a separate readiness/maintenance gate; a successful executable run does not validate external documentation links.
 
 ## Anti-patterns
 
