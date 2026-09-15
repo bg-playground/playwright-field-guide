@@ -10,7 +10,7 @@ Best practices · How-tos · Recipes · Anti-patterns · Debugging · Architectu
 
 This repository is a living engineering field guide for building reliable browser automation with Playwright. It is intentionally **not another starter framework**. The goal is to explain the decisions that make a Playwright suite resilient, diagnosable, maintainable, and useful in real delivery pipelines.
 
-**Never wired Playwright into CI?** Start with [`first-green-playwright`](https://github.com/bg-playground/first-green-playwright) — a short path from the first local test to the first green GitHub Actions run. Come back here for production patterns.
+**Never wired Playwright into CI?** Start with [`Playwright-Onboarding-Lab`](https://github.com/bg-playground/Playwright-Onboarding-Lab) — a short path from the first local test to the first green GitHub Actions run. Come back here for production patterns.
 
 **New here, but already running tests?** Follow the [Playwright Field Guide Learning Path](docs/learning-path.md). **Solving a problem right now?** Use the task index below.
 
@@ -20,7 +20,7 @@ This repository is a living engineering field guide for building reliable browse
 
 | I want to… | Go to… |
 | --- | --- |
-| Get a first green Playwright CI run | [**First Green Playwright**](https://github.com/bg-playground/first-green-playwright) |
+| Get a first green Playwright CI run | [**Playwright Onboarding Lab**](https://github.com/bg-playground/Playwright-Onboarding-Lab) |
 | Learn the Field Guide in a sensible order | [**Learning Path**](docs/learning-path.md) |
 | Stop flaky tests | [**Reliable Test Design**](docs/reliable-test-design/README.md) |
 | Diagnose a flaky test | [**Why Is My Playwright Test Flaky?**](docs/reliable-test-design/flakiness-diagnostic.md) |
@@ -160,9 +160,9 @@ Directories are added when they contain useful material; the project does not cr
 - a place where preference is presented as fact;
 - a reason to add abstractions that a test suite does not need.
 
-## Relationship to `first-green-playwright`
+## Relationship to `Playwright-Onboarding-Lab`
 
-[`first-green-playwright`](https://github.com/bg-playground/first-green-playwright) is the beginner on-ramp: terminology, copy-paste tests, and a working GitHub Actions workflow. This Field Guide assumes you already have that first green run and need production decisions.
+[`Playwright-Onboarding-Lab`](https://github.com/bg-playground/Playwright-Onboarding-Lab) is the beginner on-ramp: terminology, copy-paste tests, and a working GitHub Actions workflow. This Field Guide assumes you already have that first green run and need production decisions.
 
 ## Relationship to `bgstm-playwright-frameworks`
 
