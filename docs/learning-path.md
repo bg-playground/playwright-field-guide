@@ -4,7 +4,7 @@
 
 ## New to Playwright
 
-Start with the ideas that prevent fragile habits from forming:
+If you have not yet run Playwright in CI, start with [`first-green-playwright`](https://github.com/bg-playground/first-green-playwright). Then come back here for the ideas that prevent fragile habits from forming:
 
 1. [Reliable Test Design](reliable-test-design/README.md) — isolation, synchronization, assertions, and trustworthy failures.
 2. [Locator Strategy](locators/README.md) — choose locators that express user-visible meaning and survive routine UI change.
@@ -29,7 +29,7 @@ The goal is not to rewrite the suite into the Field Guide's preferred shape. Ide
 
 ## Owning Playwright in CI
 
-Start here:
+If CI is not green yet, use [`first-green-playwright`](https://github.com/bg-playground/first-green-playwright) first. Then:
 
 1. [CI & Debugging](ci-debugging/README.md)
 2. [Passes Locally, Fails in CI](ci-debugging/passes-locally.md)
